@@ -11,7 +11,8 @@ namespace EF_test
         static void Main(string[] args)
         {
             var db = new SchoolDB();
-           
+            
+           //test data
             var grade = new Grade {GradeId =1, GradeName = "grade1" };
             DateTime dt = new DateTime(2008, 3, 9, 16, 5, 7, 123);
             var stud = db.Students.Add(new Student { StudentFName="Lloyd", StudentLName = "Sherewa",
@@ -20,9 +21,10 @@ namespace EF_test
             db.Students.Add(stud);
             db.SaveChanges();
 
-            Console.WriteLine("Stud added to db");
+            var studname = stud.StudentName;
+            Console.WriteLine("Stud added to db " + studname);
             Console.ReadKey();
 
-            }
+        }
     }
 }

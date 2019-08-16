@@ -9,7 +9,7 @@ namespace EF_test
 {
     class SchoolDB: DbContext
     {
-        public SchoolDB(): base()
+        public SchoolDB(): base() //db without an initialzier
         {
             Database.SetInitializer<SchoolDB>(null);
         }

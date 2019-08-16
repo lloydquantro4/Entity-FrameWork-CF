@@ -16,7 +16,7 @@ namespace EF_test
         public string Province { get; set; }
         public string Country { get; set; }
 
-        
+        //lazy load
         public virtual Student Student { get; set; }
     }
 }
