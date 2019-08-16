@@ -1,2 +1,2 @@
-Example of code first database approach in C# using entity framework version 6
+Code-first approach in making a database using C# and Entity Framework v6
 
